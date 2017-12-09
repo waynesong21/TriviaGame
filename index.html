@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Triva Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<header id="masthead">
+		<div class="container">
+			<h1>How Smart Are you?</h1>
+		</div>
+	</header>
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1 class="rules">The Rules</h1>
+			<p class="rules">You will be given 50 seconds to answer 5 questions about U.S. presidents.</p>
+			<h2>
+				<button type="button" id="start-button">I'm so smart, let's go</button>
+			</h2>
+			<!-- timer will be displayed in div#show-number-->
+			<div id="show-number"></div>
+			<!-- question 1 -->
+			<p class="question">1. What is the first name of President Lincoln?</p>
+			<ul class="answers">
+			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">John</label><br/>
+			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Abraham</label><br/>
+			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Obama</label><br/>
+			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">George</label><br/>
+			</ul>
+			<!-- question 2 -->
+			<p class="question">2. How is the term limit for U.S. presidents?</p>
+			<ul class="answers">
+			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">1</label><br/>
+			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">2</label><br/>
+			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">3</label><br/>
+			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">4</label><br/>
+			</ul>
+			<!-- question 3 -->
+			<p class="question">3. Suppose both the president, the vice president, and the Speaker of the House have been removed from the office, to whom does the line of succession fall? </p>
+			<ul class="answers">
+			<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">First Lady</label><br/>
+			<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Secretary of the State</label><br/>
+			<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Senate President Pro Tempore</label><br/>
+			<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Kanye West</label><br/>
+			</ul>
+			<!-- question 4 -->
+			<p class="question">4. What travels around the world but stays in one spot?</p>
+			<ul class="answers">
+			<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Air</label><br/>
+			<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Stamp</label><br/>
+			<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Time</label><br/>
+			<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Birds</label><br/>
+			</ul>
+			<!-- question 5 -->
+			<p class="question">4. Who was America's third president?</p>
+			<ul class="answers">
+			<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">John Adams</label><br/>
+			<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Thomas Jefferson</label><br/>
+			<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Wayne Song</label><br/>
+			<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">James Madison</label><br/>
+			</ul>
+			<!-- Hidden Buttons and Elements -->
+			<!-- Submit Button -->
+			<button type="button" id="submit">Submit Final Answers</button>
+			<!-- Results -->
+			<div id="results">
+				<p>Your Final Score</p>
+			</div>
+			<button type="button" id="restart">Play Again</button>
+		</section>
+	</div>
+	<footer id="footer" class="site-footer">
+		<div class="container">
+			&copy; Copyright 2017 Wayne Song
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script type="text/javascript" src="/js/questions.js"></script>
+</body>
+</html>
